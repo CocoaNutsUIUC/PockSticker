@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="StockViewCell" id="gTV-IL-0wX" customClass="StockViewCell" customModule="PockSticker" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="192"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="250" height="192"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OKL-sL-vw9">
+                        <rect key="frame" x="0.0" y="171" width="250" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="nnM-Ud-xLh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="CMn-wm-rgf">
+                        <rect key="frame" x="106.5" y="77.5" width="37" height="37"/>
+                    </activityIndicatorView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qob-Tq-Jgn">
+                        <rect key="frame" x="0.0" y="0.0" width="250" height="163"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="qob-Tq-Jgn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="3px-A5-8t5"/>
+                <constraint firstAttribute="centerX" secondItem="CMn-wm-rgf" secondAttribute="centerX" id="6gK-QZ-V6L"/>
+                <constraint firstAttribute="trailing" secondItem="qob-Tq-Jgn" secondAttribute="trailing" id="HJL-Gh-v6C"/>
+                <constraint firstAttribute="trailing" secondItem="OKL-sL-vw9" secondAttribute="trailing" id="O1P-wu-bow"/>
+                <constraint firstAttribute="centerY" secondItem="CMn-wm-rgf" secondAttribute="centerY" id="ORf-0a-aiE"/>
+                <constraint firstItem="OKL-sL-vw9" firstAttribute="top" secondItem="qob-Tq-Jgn" secondAttribute="bottom" constant="8" symbolic="YES" id="fMq-7u-V5r"/>
+                <constraint firstItem="qob-Tq-Jgn" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="gGb-Up-Vsn"/>
+                <constraint firstItem="OKL-sL-vw9" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="hff-n2-Gnq"/>
+                <constraint firstAttribute="bottom" secondItem="OKL-sL-vw9" secondAttribute="bottom" id="kbP-0z-PjS"/>
+            </constraints>
+            <size key="customSize" width="250" height="192"/>
+            <connections>
+                <outlet property="imageView" destination="qob-Tq-Jgn" id="0LS-MN-b7b"/>
+                <outlet property="label" destination="OKL-sL-vw9" id="J4M-BO-CJD"/>
+                <outlet property="spinner" destination="CMn-wm-rgf" id="4iM-HG-lJL"/>
+            </connections>
+            <point key="canvasLocation" x="293" y="454"/>
+        </collectionViewCell>
+    </objects>
+</document>

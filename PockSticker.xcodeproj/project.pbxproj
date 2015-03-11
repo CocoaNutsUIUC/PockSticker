@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B813DF421AAFD7F900FEF9DB /* StockViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B813DF401AAFD7F900FEF9DB /* StockViewCell.swift */; };
+		B813DF431AAFD7F900FEF9DB /* StockViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B813DF411AAFD7F900FEF9DB /* StockViewCell.xib */; };
+		B813DF451AAFE5CC00FEF9DB /* StockCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B813DF441AAFE5CC00FEF9DB /* StockCollectionViewController.swift */; };
+		B813DF471AAFE6B600FEF9DB /* StockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B813DF461AAFE6B600FEF9DB /* StockData.swift */; };
 		B82220931AA6292A00DE663A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82220921AA6292A00DE663A /* AppDelegate.swift */; };
 		B82220951AA6292A00DE663A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82220941AA6292A00DE663A /* ViewController.swift */; };
 		B82220981AA6292A00DE663A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B82220961AA6292A00DE663A /* Main.storyboard */; };
@@ -26,6 +30,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B813DF401AAFD7F900FEF9DB /* StockViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockViewCell.swift; sourceTree = "<group>"; };
+		B813DF411AAFD7F900FEF9DB /* StockViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StockViewCell.xib; sourceTree = "<group>"; };
+		B813DF441AAFE5CC00FEF9DB /* StockCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockCollectionViewController.swift; sourceTree = "<group>"; };
+		B813DF461AAFE6B600FEF9DB /* StockData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockData.swift; sourceTree = "<group>"; };
 		B822208D1AA6292A00DE663A /* PockSticker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PockSticker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B82220911AA6292A00DE663A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B82220921AA6292A00DE663A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +85,10 @@
 		B822208F1AA6292A00DE663A /* PockSticker */ = {
 			isa = PBXGroup;
 			children = (
+				B813DF441AAFE5CC00FEF9DB /* StockCollectionViewController.swift */,
+				B813DF461AAFE6B600FEF9DB /* StockData.swift */,
+				B813DF401AAFD7F900FEF9DB /* StockViewCell.swift */,
+				B813DF411AAFD7F900FEF9DB /* StockViewCell.xib */,
 				B82220921AA6292A00DE663A /* AppDelegate.swift */,
 				B82220941AA6292A00DE663A /* ViewController.swift */,
 				B82220961AA6292A00DE663A /* Main.storyboard */,
@@ -193,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B82220981AA6292A00DE663A /* Main.storyboard in Resources */,
+				B813DF431AAFD7F900FEF9DB /* StockViewCell.xib in Resources */,
 				B822209D1AA6292A00DE663A /* LaunchScreen.xib in Resources */,
 				B822209A1AA6292A00DE663A /* Images.xcassets in Resources */,
 			);
@@ -212,7 +225,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B813DF421AAFD7F900FEF9DB /* StockViewCell.swift in Sources */,
+				B813DF451AAFE5CC00FEF9DB /* StockCollectionViewController.swift in Sources */,
 				B82220951AA6292A00DE663A /* ViewController.swift in Sources */,
+				B813DF471AAFE6B600FEF9DB /* StockData.swift in Sources */,
 				B82220931AA6292A00DE663A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,6 +423,7 @@
 				B82220AE1AA6292B00DE663A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B82220AF1AA6292B00DE663A /* Build configuration list for PBXNativeTarget "PockStickerTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +432,7 @@
 				B82220B11AA6292B00DE663A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
